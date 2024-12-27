@@ -48,38 +48,38 @@ Facilitate addition and tracking of new staff members.
 ### Technology Used: 
 
 - ** Programming Language: Java
-Core programming language used for the development of the system.
+- Core programming language used for the development of the system.
 
 - ** Data Structures:
-Utilized ArrayList, HashMap, and other collections to store and manage data efficiently.
+- Utilized ArrayList, HashMap, and other collections to store and manage data efficiently.
 
 - ** Database Integration (Optional for extended functionality):
-Can integrate with databases like MySQL or PostgreSQL to handle persistent data storage.
+- Can integrate with databases like MySQL or PostgreSQL to handle persistent data storage.
 
 - ** IDE: IntelliJ IDEA, Eclipse, or NetBeans
-Used for developing and testing the Java application.
+- Used for developing and testing the Java application.
 
 - ** User Interface (Optional):
-Basic CLI (Command Line Interface) for input/output interaction. Can be extended to a GUI using JavaFX or Swing.
+- Basic CLI (Command Line Interface) for input/output interaction. Can be extended to a GUI using JavaFX or Swing.
 
 ### Key Insights
 
 - ** Modularity:
-The system is divided into discrete modules, each responsible for a specific aspect of hospital management, enabling easy maintenance and scalability.
+- The system is divided into discrete modules, each responsible for a specific aspect of hospital management, enabling easy maintenance and scalability.
 
 - **  Scalability:
-The design allows for future expansions, such as integrating new modules (e.g., telemedicine, advanced analytics).
+- The design allows for future expansions, such as integrating new modules (e.g., telemedicine, advanced analytics).
 
 - ** Data Integrity and Security:
-Ensures sensitive patient data is handled securely, with optional encryption for EHRs and financial data.
+- Ensures sensitive patient data is handled securely, with optional encryption for EHRs and financial data.
 
 - ** Ease of Use:
-Simple CLI design ensures quick adoption by hospital staff without extensive training.
+- Simple CLI design ensures quick adoption by hospital staff without extensive training.
 
 - ** Automation and Efficiency:
-Automates repetitive tasks like billing and inventory tracking, reducing administrative workload.
+- Automates repetitive tasks like billing and inventory tracking, reducing administrative workload.
 
 - ** Customization:
-The modular nature allows customization according to the specific needs of different healthcare facilities.
+- The modular nature allows customization according to the specific needs of different healthcare facilities.
 
 
