@@ -84,4 +84,12 @@ interaction. Can be extended to a GUI using JavaFX or Swing.
 - The modular nature allows customization according to the specific needs of different healthcare facilities.
 
 
-![Screenshot (50)](https://github.com/user-attachments/assets/b9ca167f-0c50-420a-8c6c-4665a0fcb60f)
+![Screenshot (42)](https://github.com/user-attachments/assets/62975fa6-f1ed-4f0e-b0c3-93e3377acc72)
+![Screenshot (43)](https://github.co
+![Screenshot (44)](https://github.com/user-attachments/assets/2efa9cd3-d757-4446-b90d-b462294a2cf2)
+m/user-attachments/assets/76ce993e-2da4-42be-ac13-b4341d54e885)
+![Screenshot (45)](https://github.com/user-attachments/assets/607ec2bf-4a12-4266-8757-24fe5a799557)
+![Screenshot (46)](https://github.com/user-attachments/assets/ab4f4c48-0b91-4dda-9633-4a8d1cf7443e)
+![Screenshot (47)](https://github.com/user-attachments/assets/c351a310-c05e-461f-a9d0-a289f12a036b)
+![Screenshot (48)](https://github.com/user-attachments/assets/71d5df8e-43fd-4f0f-94f2-b640747e4036)
+![Screenshot (49)](https://github.com/user-attachments/assets/75588c97-4653-4e71-a2a8-16913f0b9ce6)
