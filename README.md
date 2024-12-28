@@ -60,7 +60,8 @@ Facilitate addition and tracking of new staff members.
 - Used for developing and testing the Java application.
 
 - ** User Interface (Optional):
-- Basic CLI (Command Line Interface) for input/output interaction. Can be extended to a GUI using JavaFX or Swing.
+- Basic CLI (Command Line Interface) for input/output 
+interaction. Can be extended to a GUI using JavaFX or Swing.
 
 ### Key Insights
 
@@ -83,3 +84,4 @@ Facilitate addition and tracking of new staff members.
 - The modular nature allows customization according to the specific needs of different healthcare facilities.
 
 
+![Screenshot (50)](https://github.com/user-attachments/assets/b9ca167f-0c50-420a-8c6c-4665a0fcb60f)
