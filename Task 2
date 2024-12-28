@@ -1,0 +1,256 @@
+/*Develop a sophisticated Java program to manage various aspects of a
+hospital or healthcare facility. This system should include modules for
+patient registration, appointment scheduling, electronic health records
+(EHR), billing and invoicing, inventory management for medical supplies,
+and staff management. write code injava*/
+
+
+
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+// Patient class
+class Patient {
+    private String id;
+    private String name;
+    private String contact;
+
+    public Patient(String id, String name, String contact) {
+        this.id = id;
+        this.name = name;
+        this.contact = contact;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+}
+
+// Appointment class
+class Appointment {
+    private String patientId;
+    private String date;
+    private String time;
+
+    public Appointment(String patientId, String date, String time) {
+        this.patientId = patientId;
+        this.date = date;
+        this.time = time;
+    }
+
+    public String getPatientId() {
+        return patientId;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+}
+
+// EHR class
+class ElectronicHealthRecord {
+    private String patientId;
+    private String record;
+
+    public ElectronicHealthRecord(String patientId, String record) {
+        this.patientId = patientId;
+        this.record = record;
+    }
+
+    public String getPatientId() {
+        return patientId;
+    }
+
+    public String getRecord() {
+        return record;
+    }
+}
+
+// Billing class
+class Billing {
+    private String patientId;
+    private double amount;
+
+    public Billing(String patientId, double amount) {
+        this.patientId = patientId;
+        this.amount = amount;
+    }
+
+    public String getPatientId() {
+        return patientId;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+}
+
+// Inventory class
+class Inventory {
+    private String itemName;
+    private int quantity;
+
+    public Inventory(String itemName, int quantity) {
+        this.itemName = itemName;
+        this.quantity = quantity;
+    }
+
+    public String getItemName() {
+        return itemName;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+}
+
+// Staff class
+class Staff {
+    private String id;
+    private String name;
+    private String role;
+
+    public Staff(String id, String name, String role) {
+        this.id = id;
+        this.name = name;
+        this.role = role;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+}
+
+// Hospital Management System class
+class HospitalManagementSystem {
+    private List<Patient> patients = new ArrayList<>();
+    private List<Appointment> appointments = new ArrayList<>();
+    private List<ElectronicHealthRecord> ehrRecords = new ArrayList<>();
+    private List<Billing> billings = new ArrayList<>();
+    private List<Inventory> inventory = new ArrayList<>();
+    private List<Staff> staffMembers = new ArrayList<>();
+
+    // Patient Registration
+    public void registerPatient(String id, String name, String contact) {
+        patients.add(new Patient(id, name, contact));
+    }
+
+    // Appointment Scheduling
+    public void scheduleAppointment(String patientId, String date, String time) {
+        appointments.add(new Appointment(patientId, date, time));
+    }
+
+    // Add EHR
+    public void addEHR(String patientId, String record) {
+        ehrRecords.add(new ElectronicHealthRecord(patientId, record));
+    }
+
+    // Billing
+    public void addBilling(String patientId, double amount) {
+        billings.add(new Billing(patientId, amount));
+    }
+
+    // Inventory Management
+    public void addInventoryItem(String itemName, int quantity) {
+        inventory.add(new Inventory(itemName, quantity));
+    }
+
+    // Staff Management
+    public void addStaff(String id, String name, String role) {
+        staffMembers.add(new Staff(id, name, role));
+    }
+
+    // Display all patients
+    public void displayPatients() {
+        System.out.println("Patients:");
+        for (Patient patient : patients) {
+            System.out.println("ID: " + patient.getId() + ", Name: " + patient.getName() + ", Contact: " + patient.getContact());
+        }
+    }
+
+    // Display all appointments
+    public void displayAppointments() {
+ System.out.println("Appointments:");
+        for (Appointment appointment : appointments) {
+            System.out.println("Patient ID: " + appointment.getPatientId() + ", Date: " + appointment.getDate() + ", Time: " + appointment.getTime());
+        }
+    }
+
+    // Display all EHR records
+    public void displayEHRRecords() {
+        System.out.println("Electronic Health Records:");
+        for (ElectronicHealthRecord ehr : ehrRecords) {
+            System.out.println("Patient ID: " + ehr.getPatientId() + ", Record: " + ehr.getRecord());
+        }
+    }
+
+    // Display all billings
+    public void displayBillings() {
+        System.out.println("Billings:");
+        for (Billing billing : billings) {
+            System.out.println("Patient ID: " + billing.getPatientId() + ", Amount: " + billing.getAmount());
+        }
+    }
+
+    // Display inventory
+    public void displayInventory() {
+        System.out.println("Inventory:");
+        for (Inventory item : inventory) {
+            System.out.println("Item Name: " + item.getItemName() + ", Quantity: " + item.getQuantity());
+        }
+    }
+
+    // Display staff members
+    public void displayStaff() {
+        System.out.println("Staff Members:");
+        for (Staff staff : staffMembers) {
+            System.out.println("ID: " + staff.getId() + ", Name: " + staff.getName() + ", Role: " + staff.getRole());
+        }
+    }
+}
+
+// Main class to run the hospital management system
+public class Main {
+    public static void main(String[] args) {
+        HospitalManagementSystem hms = new HospitalManagementSystem();
+
+        // Sample data
+        hms.registerPatient("P001", "John Doe", "123-456-7890");
+        hms.scheduleAppointment("P001", "2023-10-01", "10:00 AM");
+        hms.addEHR("P001", "Allergy to penicillin");
+        hms.addBilling("P001", 150.00);
+        hms.addInventoryItem("Bandages", 100);
+        hms.addStaff("S001", "Dr. Smith", "Doctor");
+
+        // Display all information
+        hms.displayPatients();
+        hms.displayAppointments();
+        hms.displayEHRRecords();
+        hms.displayBillings();
+        hms.displayInventory();
+        hms.displayStaff();
+    }
+}
